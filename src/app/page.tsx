@@ -12,7 +12,7 @@ import SkillBadge from "@/components/SkillBadge";
 export default function Home() {
   return (
     <>
-      <section className="flex h-screen flex-col items-center justify-center gap-6 px-6 text-center">
+      <section className="flex h-screen flex-col items-center justify-center gap-6 px-6 text-center"> {/*Greetings/blurb section*/}
         <div>
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
             Hi! I’m{" "}
@@ -37,18 +37,18 @@ export default function Home() {
       <section
         id="homepage"
         className="flex min-h-screen flex-1 flex-col items-center justify-center gap-12 px-6 py-24"
-      >
+      > {/*BIO SECTION*/}
         <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
           About Me
         </h2>
 
         <div className="flex w-full max-w-5xl flex-col gap-10 md:flex-row-reverse md:items-center">
           <p className="max-w-2xl text-lg leading-relaxed text-foreground/80">
-            I’m a student at McMaster University’s Software Engineering Program, currently in my co-op term. 
-            I have a passion for building full-stack applications and exploring and leveraging new technologies. 
-            Right now, I’m working on a personal Notion-clone project using React and Next.js to create a dynamic 
-            and interactive user experience. I enjoy and relish the opportunity to continuously learn and 
-            improve my skills in software development.
+            I’m a student at McMaster University’s Software Engineering Program, currently in my co-op term with 
+            the Ontario Public Service working on OSAP. I have a passion for building full-stack applications and 
+            exploring and leveraging new technologies. Right now, I’m working on a personal Notion-clone project 
+            using React and Next.js to create a dynamic and interactive user experience. I enjoy and relish the 
+            opportunity to continuously learn and improve my skills in software development.
           </p>
 
           {/* TODO: add stuff here as I continuosly improve my skillset*/}

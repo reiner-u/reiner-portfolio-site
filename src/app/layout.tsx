@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ethan Reiner | Portfolio",
-  description: "Portfolio site for Ethan Reiner, software developer.",
+  title: "Reiner Umila | Portfolio",
+  description: "Portfolio site for Reiner Umila, software developer.",
 };
 
 export default function RootLayout({
