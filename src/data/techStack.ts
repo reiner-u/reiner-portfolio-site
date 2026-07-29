@@ -6,6 +6,9 @@ import {
   SiPython,
   SiGit,
   SiCplusplus,
+  SiHtml5,
+  SiJavascript,
+  SiCss,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 
@@ -23,6 +26,9 @@ const techStack: Record<string, TechEntry> = { /*TODO: Add more tech entries her
     python: { label: "Python", icon: SiPython, accent: "blue" },
     git: { label: "Git", icon: SiGit, accent: "purple" },
     cpp: { label: "C++", icon: SiCplusplus, accent: "cyan" },
+    javascript: { label: "JavaScript", icon: SiJavascript, accent: "green" }, 
+    html: { label: "HTML", icon: SiHtml5, accent: "blue" }, 
+    css: { label: "CSS", icon: SiCss, accent: "purple" },
 };
 export { techStack }; {/*Exporting the techStack object for use in project cards*/}
 export type TechKey = keyof typeof techStack; {/*Exporting the type of keys in techStack for use in projects helper files*/}
