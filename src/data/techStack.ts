@@ -9,6 +9,12 @@ import {
   SiHtml5,
   SiJavascript,
   SiCss,
+  SiStreamlit,
+  SiNumpy,
+  SiNodered,
+  SiEspressif,
+  SiArduino,
+  SiPlatformio
 } from "react-icons/si";
 import { IconType } from "react-icons";
 
@@ -29,6 +35,12 @@ const techStack: Record<string, TechEntry> = { /*TODO: Add more tech entries her
     javascript: { label: "JavaScript", icon: SiJavascript, accent: "green" }, 
     html: { label: "HTML", icon: SiHtml5, accent: "blue" }, 
     css: { label: "CSS", icon: SiCss, accent: "purple" },
+    streamlit: { label: "Streamlit", icon: SiStreamlit, accent: "cyan" },
+    nodered: { label: "Node-RED", icon: SiNodered, accent: "green" },
+    esp32: { label: "ESP32", icon: SiEspressif, accent: "blue" },
+    arduino: { label: "Arduino", icon: SiArduino, accent: "purple" },
+    platformio: { label: "PlatformIO", icon: SiPlatformio, accent: "cyan" },
+    numpy: { label: "NumPy", icon: SiNumpy, accent: "green" }
 };
 export { techStack }; {/*Exporting the techStack object for use in project cards*/}
 export type TechKey = keyof typeof techStack; {/*Exporting the type of keys in techStack for use in projects helper files*/}
