@@ -12,7 +12,7 @@ import SkillBadge from "@/components/SkillBadge";
 export default function Home() {
   return (
     <>
-      <section className="flex h-screen flex-col items-center justify-center gap-6 px-6 text-center"> {/*Greetings/blurb section*/}
+      <section className="relative z-20 flex h-screen flex-col items-center justify-center gap-6 bg-background px-6 text-center"> {/*Greetings/blurb section*/}
         <div>
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
             Hi! I’m{" "}

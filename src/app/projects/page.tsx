@@ -5,7 +5,7 @@ export default function Projects() {
     const featured = projects.slice(0, 4); // Display only the first 4 projects as featured
     return (
         <>  
-            <h1 className="text-center text-4xl font-semibold tracking-tight text-accent-blue mt-10 sm:text-5xl">
+            <h1 className="text-center text-4xl font-semibold tracking-tight text-accent-blue mt-16 sm:text-5xl">
                 Projects
             </h1>
 

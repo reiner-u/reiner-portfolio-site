@@ -24,7 +24,7 @@ export const projects: Project[] = [ //Add all projects here, each project shoul
         title: "BlockBlast Solver",
         description: "A solver for the mobile puzzle game Block Blast, built entirely from scratch in Python and presented through Streamlit. You feed it your current board and the three pieces you've been dealt. It figures out the best place to put all of them and how to place them.",
         motivation: "I built this to learn how to implement a backtracking algorithm and to explore the capabilities of Streamlit for building interactive web apps in Python. Also, because BlockBlast is a fun game I was obsessed with and I wanted to understand the mechanics of it better.",
-        techStack: ["python", "streamlit", "numpy"],
+        techStack: ["python", "streamlit", "numpy", "css"],
         image: "/test_image.jpg",
         githubLink: "https://github.com/reiner-u/BlockBlast_Solver",
     },
