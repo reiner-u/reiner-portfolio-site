@@ -12,7 +12,7 @@ import SkillBadge from "@/components/SkillBadge";
 export default function Home() {
   return (
     <>
-      <section className="relative z-20 flex h-screen flex-col items-center justify-center gap-6 bg-background px-6 text-center"> {/*Greetings/blurb section*/}
+      <section className="relative z-20 flex h-screen flex-col items-center justify-center gap-6 bg-background px-6 text-center overscroll-y-none"> {/*Greetings/blurb section*/}
         <div>
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
             Hi! I’m{" "}
@@ -45,8 +45,8 @@ export default function Home() {
         <div className="flex w-full max-w-5xl flex-col gap-10 md:flex-row-reverse md:items-center">
           <p className="max-w-2xl text-lg leading-relaxed text-foreground/80">
             I’m a student at McMaster University’s Software Engineering Program, currently in my co-op term with 
-            the Ontario Public Service working on OSAP. I have a passion for building full-stack applications and 
-            exploring and leveraging new technologies. Right now, I’m working on a personal Notion-clone project 
+            the Ontario Public Service working in a Software QA role. I have a passion for building full-stack applications and 
+            exploring and leveraging new concepts and technologies. Right now, I’m working on a personal Notion-clone project 
             using React and Next.js to create a dynamic and interactive user experience. I enjoy and relish the 
             opportunity to continuously learn and improve my skills in software development.
           </p>
