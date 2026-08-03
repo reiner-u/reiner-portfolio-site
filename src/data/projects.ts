@@ -18,6 +18,7 @@ export const projects: Project[] = [ //Add all projects here, each project shoul
         techStack: ["python", "javascript", "css", "html", "react", "fastapi"],
         image: "/weather_project_ny.png",
         githubLink: "https://github.com/reiner-u/Weather_Project",
+        liveLink: "https://reinerumila-weatherproject.netlify.app",
     },
     {
         id: "blockblast-solver",
@@ -27,6 +28,7 @@ export const projects: Project[] = [ //Add all projects here, each project shoul
         techStack: ["python", "streamlit", "numpy", "css"],
         image: "/blockblast_solver.png",
         githubLink: "https://github.com/reiner-u/BlockBlast_Solver",
+        liveLink: "https://blockblastsolver.streamlit.app",
     },
     {
         id:"humanbenchmark-gamedevice",
