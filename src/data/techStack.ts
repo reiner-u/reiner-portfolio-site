@@ -14,9 +14,13 @@ import {
   SiNodered,
   SiEspressif,
   SiArduino,
-  SiPlatformio
+  SiPlatformio,
+  SiFastapi,
+  SiPandas,
+  SiSelenium,
 } from "react-icons/si";
 import { IconType } from "react-icons";
+import SiPlaywright from "@/components/icons/SiPlaywright";
 
 /*This is all designed to use similar structure as SkillBadges on the homepage, but icons are looked up on render time for use in each project card*/
 type TechEntry = {
@@ -40,7 +44,11 @@ const techStack: Record<string, TechEntry> = { /*TODO: Add more tech entries her
     esp32: { label: "ESP32", icon: SiEspressif, accent: "blue" },
     arduino: { label: "Arduino", icon: SiArduino, accent: "purple" },
     platformio: { label: "PlatformIO", icon: SiPlatformio, accent: "cyan" },
-    numpy: { label: "NumPy", icon: SiNumpy, accent: "green" }
+    numpy: { label: "NumPy", icon: SiNumpy, accent: "green" },
+    fastapi: { label: "FastAPI", icon: SiFastapi, accent: "green" },
+    pandas: { label: "pandas", icon: SiPandas, accent: "purple" },
+    selenium: { label: "Selenium", icon: SiSelenium, accent: "blue" },
+    playwright: { label: "Playwright", icon: SiPlaywright, accent: "cyan" }
 };
 export { techStack }; {/*Exporting the techStack object for use in project cards*/}
 export type TechKey = keyof typeof techStack; {/*Exporting the type of keys in techStack for use in projects helper files*/}
