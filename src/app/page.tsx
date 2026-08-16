@@ -6,6 +6,8 @@ import {
   SiPython,
   SiGit,
   SiCplusplus,
+  SiFastapi,
+  SiSelenium,
 } from "react-icons/si";
 import SkillBadge from "@/components/SkillBadge";
 
@@ -16,7 +18,7 @@ export default function Home() {
         <div>
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
             Hi! I’m{" "}
-            <span className="bg-linear-to-r from-accent-purple to-accent-blue bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-accent-blue to-accent-red bg-clip-text text-transparent">
               Reiner Umila.
             </span>
           </h1>
@@ -53,13 +55,15 @@ export default function Home() {
 
           {/* TODO: add stuff here as I continuosly improve my skillset*/}
           <div className="flex flex-wrap justify-center gap-4 md:justify-start">
-            <SkillBadge icon={<SiReact />} label="React" accent="blue" />
-            <SkillBadge icon={<SiNextdotjs />} label="Next.js" accent="purple" />
-            <SkillBadge icon={<SiTypescript />} label="TypeScript" accent="cyan" />
-            <SkillBadge icon={<SiTailwindcss />} label="Tailwind CSS" accent="green" />
-            <SkillBadge icon={<SiPython />} label="Python" accent="blue" />
+            <SkillBadge icon={<SiReact />} label="React" accent="purple" />
+            <SkillBadge icon={<SiNextdotjs />} label="Next.js" accent="blue" />
+            <SkillBadge icon={<SiTypescript />} label="TypeScript" accent="green" />
+            <SkillBadge icon={<SiTailwindcss />} label="Tailwind CSS" accent="cyan" />
+            <SkillBadge icon={<SiPython />} label="Python" accent="gold" />
             <SkillBadge icon={<SiGit />} label="Git" accent="purple" />
-            <SkillBadge icon={<SiCplusplus />} label="C++" accent="cyan" />
+            <SkillBadge icon={<SiCplusplus />} label="C++" accent="blue" />
+            <SkillBadge icon={<SiFastapi />} label="FastAPI" accent="green" />
+            <SkillBadge icon={<SiSelenium />} label="Selenium" accent="cyan" />
           </div>
           
         </div>

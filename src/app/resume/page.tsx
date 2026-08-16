@@ -35,6 +35,10 @@ const skillCategories: SkillCategory[] = [
     label: "Hardware & IoT",
     skills: ["esp32", "arduino", "platformio", "nodered"],
   },
+  {
+    label: "Deployment & Infrastructure",
+    skills: ["supabase", "netlify", "render"],
+  },
 ];
 
 export default function Resume() {

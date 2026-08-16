@@ -20,7 +20,7 @@ export default function NavMenu() {
   return (
     <nav className="fixed top-0 inset-x-0 z-10 bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-            <Link href="/" className="text-xl font-bold tracking-tight bg-linear-to-r from-accent-purple to-accent-blue bg-clip-text text-transparent">
+            <Link href="/" className="text-xl font-bold tracking-tight bg-linear-to-r from-accent-blue to-accent-red bg-clip-text text-transparent">
                 Reiner Umila
             </Link>
             <div className="hidden gap-8 md:flex ml-auto">

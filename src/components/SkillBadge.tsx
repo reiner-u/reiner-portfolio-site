@@ -1,7 +1,7 @@
 type SkillBadgeProps = {
   icon: React.ReactNode;
   label: string;
-  accent?: "purple" | "blue" | "green" | "cyan";
+  accent?: "purple" | "blue" | "green" | "cyan" | "gold" | "red";
 };
 
 const accentBorderClasses: Record<
@@ -12,6 +12,8 @@ const accentBorderClasses: Record<
   blue: "border-accent-blue",
   green: "border-accent-green",
   cyan: "border-accent-cyan",
+  gold: "border-accent-gold",
+  red: "border-accent-red",
 };
 
 export default function SkillBadge({
