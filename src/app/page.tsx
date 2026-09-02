@@ -18,7 +18,7 @@ export default function Home() {
         <div>
           <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
             Hi! I’m{" "}
-            <span className="bg-linear-to-r from-accent-blue to-accent-red bg-clip-text text-transparent">
+            <span className="text-accent-blue">
               Reiner Umila.
             </span>
           </h1>
@@ -47,10 +47,11 @@ export default function Home() {
         <div className="flex w-full max-w-5xl flex-col gap-10 md:flex-row-reverse md:items-center">
           <p className="max-w-2xl text-lg leading-relaxed text-foreground/80">
             I’m a student at McMaster University’s Software Engineering Program, currently in my co-op term with 
-            the Ontario Public Service working in a Software QA role. I have a passion for building full-stack applications and 
-            exploring and leveraging new concepts and technologies. Right now, I’m working on a personal Notion-clone project 
-            using React and Next.js to create a dynamic and interactive user experience. I enjoy and relish the 
-            opportunity to continuously learn and improve my skills in software development.
+            the Ontario Public Service working in a Software QA role. I like understanding how things actually work 
+            under the hood, whether that’s a full-stack app, a puzzle-solving algorithm, or a piece of hardware 
+            built up from a bare microcontroller. Right now that’s Noctus, a personal Notion-clone I’m building with 
+            React and Next.js. I like the moments where something finally clicks after being stuck on it for a while, 
+            that’s usually when I’ve actually learned something.
           </p>
 
           {/* TODO: add stuff here as I continuosly improve my skillset*/}

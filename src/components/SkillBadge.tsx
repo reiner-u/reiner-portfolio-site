@@ -4,16 +4,16 @@ type SkillBadgeProps = {
   accent?: "purple" | "blue" | "green" | "cyan" | "gold" | "red";
 };
 
-const accentBorderClasses: Record<
+const accentTopBorderClasses: Record<
   NonNullable<SkillBadgeProps["accent"]>,
   string
 > = {
-  purple: "border-accent-purple",
-  blue: "border-accent-blue",
-  green: "border-accent-green",
-  cyan: "border-accent-cyan",
-  gold: "border-accent-gold",
-  red: "border-accent-red",
+  purple: "border-t-accent-purple",
+  blue: "border-t-accent-blue",
+  green: "border-t-accent-green",
+  cyan: "border-t-accent-cyan",
+  gold: "border-t-accent-gold",
+  red: "border-t-accent-red",
 };
 
 export default function SkillBadge({
@@ -23,7 +23,7 @@ export default function SkillBadge({
 }: SkillBadgeProps) {
   return (
     <div
-      className={`flex flex-col items-center gap-2 rounded-lg border-2 px-6 py-4 text-foreground ${accentBorderClasses[accent]}`}
+      className={`flex flex-col items-center gap-2 rounded-lg border-x-2 border-b-2 border-t-4 border-x-foreground/20 border-b-foreground/20 px-6 py-4 text-foreground ${accentTopBorderClasses[accent]}`}
     >
       <span className="text-2xl">{icon}</span>
       <span className="text-xs font-semibold tracking-wide">{label}</span>
