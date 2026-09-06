@@ -11,6 +11,15 @@ export type Project = { /*helper file for use in the project cards*/
 };
 export const projects: Project[] = [ //Add all projects here, each project should have a unique id, title, description, motivation, techStack (array of TechKey), optional image path, githubLink, and optional liveLink
     {
+        id: "noctus",
+        title: "Noctus",
+        description: "A Notion-inspired scheduling and database app. Create a board, define whatever columns you actually need (text, number, date, boolean, or a custom dropdown), and edit rows directly in the table or through a slide-over panel showing one entry's full set of properties. Currently in Google's OAuth Testing mode, so the live demo is restricted to a couple of allow-listed accounts rather than open to everyone.",
+        motivation: "Built to replace a partner's Notion-based academic scheduler with something purpose-built, and to learn Postgres, row-level security, and a real full-stack Next.js and Supabase setup, with no prior database or authentication experience going in.",
+        techStack: ["nextjs", "typescript", "supabase", "tanstacktable", "tailwindcss", "shadcnui", "radixui"],
+        githubLink: "https://github.com/reiner-u/Noctus",
+        liveLink: "https://noctus-weld.vercel.app",
+    },
+    {
         id: "weather-app",
         title: "Weather Project",
         description: "A full-stack weather app. It detects your location on load and fetches live weather data immediately. You can also search any city by name. Either way, you get current conditions and a 24-hour hourly forecast pulled from the Open-Meteo API, no API key required.",
@@ -38,14 +47,5 @@ export const projects: Project[] = [ //Add all projects here, each project shoul
         techStack: ["cpp", "esp32", "arduino", "nodered", "platformio"],
         image: "/humanbenchmark_gamedevice.jpg",
         githubLink: "https://github.com/reiner-u/humanbenchmark_gamedevice",
-    },
-    {
-        id: "noctus",
-        title: "Noctus",
-        description: "A Notion-inspired scheduling and database app. Create a board, define whatever columns you actually need (text, number, date, boolean, or a custom dropdown), and edit rows directly in the table or through a slide-over panel showing one entry's full set of properties. Currently in Google's OAuth Testing mode, so the live demo is restricted to a couple of allow-listed accounts rather than open to everyone.",
-        motivation: "Built to replace a partner's Notion-based academic scheduler with something purpose-built, and to learn Postgres, row-level security, and a real full-stack Next.js and Supabase setup, with no prior database or authentication experience going in.",
-        techStack: ["nextjs", "typescript", "supabase", "tanstacktable", "tailwindcss", "shadcnui", "radixui"],
-        githubLink: "https://github.com/reiner-u/Noctus",
-        liveLink: "https://noctus-weld.vercel.app",
     }
 ];
