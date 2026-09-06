@@ -20,7 +20,10 @@ import {
   SiSelenium,
   SiSupabase,
   SiNetlify,
-  SiRender
+  SiRender,
+  SiTanstack,
+  SiShadcnui,
+  SiRadixui,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 import SiPlaywright from "@/components/icons/SiPlaywright";
@@ -29,7 +32,7 @@ import SiPlaywright from "@/components/icons/SiPlaywright";
 type TechEntry = {
     label: string;
     icon: IconType;
-    accent: "blue" | "purple" | "cyan" | "green" | "gold";
+    accent: "blue" | "purple" | "cyan" | "green" | "gold" | "red";
 }
 const techStack: Record<string, TechEntry> = { /*TODO: Add more tech entries here as needed*/
     react: { label: "React", icon: SiReact, accent: "purple" },
@@ -54,7 +57,10 @@ const techStack: Record<string, TechEntry> = { /*TODO: Add more tech entries her
     playwright: { label: "Playwright", icon: SiPlaywright, accent: "gold" },
     supabase: { label: "Supabase", icon: SiSupabase, accent: "purple" },
     netlify: { label: "Netlify", icon: SiNetlify, accent: "blue" },
-    render: { label: "Render", icon: SiRender, accent: "green" }
+    render: { label: "Render", icon: SiRender, accent: "green" },
+    tanstacktable: { label: "TanStack Table", icon: SiTanstack, accent: "cyan" },
+    shadcnui: { label: "shadcn/ui", icon: SiShadcnui, accent: "gold" },
+    radixui: { label: "Radix UI", icon: SiRadixui, accent: "purple" }
 };
 export { techStack }; {/*Exporting the techStack object for use in project cards*/}
 export type TechKey = keyof typeof techStack; {/*Exporting the type of keys in techStack for use in projects helper files*/}

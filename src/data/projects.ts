@@ -38,5 +38,14 @@ export const projects: Project[] = [ //Add all projects here, each project shoul
         techStack: ["cpp", "esp32", "arduino", "nodered", "platformio"],
         image: "/humanbenchmark_gamedevice.jpg",
         githubLink: "https://github.com/reiner-u/humanbenchmark_gamedevice",
+    },
+    {
+        id: "noctus",
+        title: "Noctus",
+        description: "A Notion-inspired scheduling and database app. Create a board, define whatever columns you actually need (text, number, date, boolean, or a custom dropdown), and edit rows directly in the table or through a slide-over panel showing one entry's full set of properties. Currently in Google's OAuth Testing mode, so the live demo is restricted to a couple of allow-listed accounts rather than open to everyone.",
+        motivation: "Built to replace a partner's Notion-based academic scheduler with something purpose-built, and to learn Postgres, row-level security, and a real full-stack Next.js and Supabase setup, with no prior database or authentication experience going in.",
+        techStack: ["nextjs", "typescript", "supabase", "tanstacktable", "tailwindcss", "shadcnui", "radixui"],
+        githubLink: "https://github.com/reiner-u/Noctus",
+        liveLink: "https://noctus-weld.vercel.app",
     }
 ];

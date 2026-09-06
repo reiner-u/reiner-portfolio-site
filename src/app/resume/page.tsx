@@ -25,6 +25,9 @@ const skillCategories: SkillCategory[] = [
       "numpy",
       "streamlit",
       "git",
+      "tanstacktable",
+      "shadcnui",
+      "radixui",
     ],
   },
   {
