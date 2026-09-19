@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Project } from "@/data/projects";
 import SkillBadge from "./SkillBadge";
+import DemoLink from "./DemoLink";
 import { techStack } from "@/data/techStack";
 
 type ProjectCardProps = {
@@ -19,14 +20,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         GitHub
       </a>
       {project.liveLink && (
-        <a
+        <DemoLink
           href={project.liveLink}
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-md border-2 border-accent-green px-4 py-2 text-sm font-semibold text-accent-green transition-colors hover:bg-accent-green hover:text-background"
         >
           Live Demo
-        </a>
+        </DemoLink>
       )}
     </div>
   );
