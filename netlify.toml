@@ -1,3 +1,20 @@
 [build]
   command = "npm run build"
   publish = "out"
+
+# Static export means next.config headers() is ignored, so headers live here.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
+# The OG image is exported without a file extension, so set its type explicitly
+# or some link-preview crawlers will refuse it.
+[[headers]]
+  for = "/opengraph-image"
+  [headers.values]
+    Content-Type = "image/png"
