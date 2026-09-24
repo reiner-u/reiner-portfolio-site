@@ -1,5 +1,13 @@
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "Projects",
+  description:
+    "A Notion-style app on Next.js and Supabase, a FastAPI and React weather app, a backtracking BlockBlast solver, and an ESP32 reaction-time game device.",
+  path: "/projects",
+});
 
 export default function Projects() {
     const featured = projects.slice(0, 4); // Display only the first 4 projects as featured

@@ -3,6 +3,7 @@ import path from "path";
 import ReactMarkdown from "react-markdown";
 import SkillBadge from "@/components/SkillBadge";
 import { techStack, type TechKey } from "@/data/techStack";
+import { pageMetadata } from "@/lib/metadata";
 
 type SkillCategory = {
   label: string;
@@ -43,6 +44,13 @@ const skillCategories: SkillCategory[] = [
     skills: ["supabase", "netlify", "render"],
   },
 ];
+
+export const metadata = pageMetadata({
+  title: "Resume",
+  description:
+    "Resume for Reiner Umila, software engineering student at McMaster University. Also available as a PDF.",
+  path: "/resume",
+});
 
 export default function Resume() {
   const filePath = path.join(process.cwd(), "src/data/resume.md");
